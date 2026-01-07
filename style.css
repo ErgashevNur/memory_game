@@ -45,13 +45,33 @@ button {
   border: none;
 }
 
+button:hover {
+  background-color: #6395b8;
+}
+
 .theme {
   display: flex;
   gap: 30px;
   margin-top: 16px;
 }
 
+.players {
+  display: flex;
+  gap: 21px;
+  margin-top: 16px;
+}
+
 .submit {
   width: 100%;
   background-color: #fda214;
+}
+
+.submit:hover {
+  background-color: #ffb84a;
+}
+
+.grid-size {
+  display: flex;
+  gap: 30px;
+  margin-top: 16px;
 }
