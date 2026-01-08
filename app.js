@@ -25,14 +25,15 @@ document.addEventListener("click", (e) => {
 
   if (button.tagName == "BUTTON" && button.id !== "submit") {
     button.style.backgroundColor = "#304859";
-    gameRule.push(button.id);
+    gameRule.push(button.textContent);
   }
 });
 
 submit.addEventListener("click", () => {
   if (gameRule === "" || gameRule.length === 3) {
-    console.log(gameRule);
-    console.log("Welcome");
+    localStorage.setItem("gameRule", gameRule);
+
+    console.log("Welcome", localStorage.getItem("gameRule"));
     window.location.href = "gameZone.html";
   } else {
     alert("Iltimos shartlarni berlgilang!");
