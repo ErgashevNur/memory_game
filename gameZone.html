@@ -7,6 +7,24 @@
       href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon_io/site.webmanifest" />
     <link rel="stylesheet" href="./gameZone.css" />
     <title>Memory Game</title>
   </head>
@@ -29,18 +47,18 @@
         <div class="player1">
           <div class="timeBox">
             <span>Time</span>
-            <span>1:30</span>
+            <span id="time">0:00</span>
           </div>
 
           <div class="movesBox">
             <span>Moves</span>
-            <span>39</span>
+            <span id="movies">0</span>
           </div>
         </div>
 
         <div class="morePlayers"></div>
       </div>
-      <script src="./gameZone.js"></script>
+      <script src="./gameZone.js" type="module"></script>
     </div>
   </body>
 </html>

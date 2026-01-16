@@ -55,7 +55,14 @@ body {
 
 .round {
   border-radius: 59px;
+
+  color: #152938;
+  font-size: 56px;
+
   display: flex;
+  justify-content: center; /* gorizontal markaz */
+  align-items: center; /* vertikal markaz */
+
   background-color: #152938;
 }
 
